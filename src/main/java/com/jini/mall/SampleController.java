@@ -16,4 +16,12 @@ public class SampleController {
         return "Hello Gradle! Hello Spring Boot!";
         
     }
+    
+    @RequestMapping(value="/test")
+    @ResponseBody
+    public String sampleTestHome() {
+        
+        return "Test Boot Sample~!";
+        
+    }
 }
